@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Spring Boot Thymeleaf - Bootstrap WebJars</title>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.0/css/bootstrap.min.css} "/>
+    <link th:rel="stylesheet" th:href="@{/css/style.css} "/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+            <a href="#!" class="ms-md-2">
+              <img th:src="@{images\mylogo.PNG}" height="100" />
+            </a>
+          </div>
+        <!-- Container wrapper -->
+        <div class="container justify-content-center justify-content-md-between">
+          <!-- Left links -->
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item me-2 me-lg-0">
+              <a class="nav-link" th:href="@{/login}" role="button" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1">
+                <i class="fas fa-bars me-1"></i>
+                <span>Sign in</span>
+              </a>
+            </li>
+            <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+              <a class="nav-link" th:href="@{/register}">Sign Up</a>
+            </li>
+            <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+              <a class="nav-link" th:href="@{/}">My Inspirations</a>
+            </li>
+            <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+              <a class="nav-link" th:href="@{/}">Blog</a>
+            </li>
+            <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+              <a class="nav-link" th:href="@{/}">Contact</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+    
+          <button class="btn btn-outline-primary" data-mdb-ripple-color="dark" type="button">
+            Download app<i class="fas fa-download ms-2"></i>
+          </button>
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <div class="p-3 text-center bg-white border-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+
+            </div>
+            <div class="col-md-4">
+              <form class="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+                <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search for" />
+                <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search"></i></span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="hero">
+        <div class="hero-container" data-aos="fade-in">
+          <h1>Welcome to ShadyTech Store</h1>
+          <h2>Full-stack developer for Startups website, Apps &amp; more...</h2>
+          <img th:src="@{images/dev1.jpg}" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+          <a href="#get-started" class="btn-get-started scrollto">Get Started</a>
+          <div class="btns">
+            <a href="#"><i class="fa fa-apple fa-3x"></i> Websites Development</a>
+            <a href="#"><i class="fa fa-play fa-3x"></i> Mobile Development</a>
+            <a href="#"><i class="fa fa-windows fa-3x"></i> Desktop Application Development</a>
+          </div>
+        </div>
+      </section><!-- End Hero Section -->
+      <section id="get-started" class="padd-section text-center">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+    
+            <h2>My Programming Language and skills </h2>
+            <p class="separator">below are the language which i have masterd over 3 years of experience.</p>
+    
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="row">
+    
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="feature-block">
+    
+                <img src="svg\java-icon.svg" alt="img">
+                <h4>Java Development</h4>
+                <p>As a full stack developer this is my main programming language for dealing with anny application/project</p>
+                <a href="#">read more</a>
+    
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="feature-block">
+    
+                <img src="svg\dartlang-official.svg" alt="img">
+                <h4>Mobile Development</h4>
+                <p>Dart is my favorite crossplatform programming language for desktop,mobile and website programming</p>
+                <a href="#">read more</a>
+    
+              </div>
+            </div>
+    
+            <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="feature-block">
+    
+                <img src="svg/asteroid.svg" alt="img">
+                <h4>build the app everyone love</h4>
+                <p>This a premium advantage and assurance that comes from ShadyTech store you get The application that everyone loves</p>
+                <a href="#">read more</a>
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+      <section id="features" class="padd-section text-center">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+            <h2>What i Offer.</h2>
+            <p class="separator">Get full support and access the following features.</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-block">
+                <img src="svg/paint-palette.svg" alt="img">
+                <h4>creative design</h4>
+                <p>Adobe Tool pack, Figma and Sketch are the tools i use to create the required graphics for the project.</p>
+              </div>
+            </div>
+  
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-block">
+                <img src="svg/design-tool.svg" alt="img">
+                <h4>easy to use applications</h4>
+                <p>This is archieved through UI/UX Designing and ensure prolific customer interaction</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-block">
+                <img src="svg/cloud-computing.svg" alt="img">
+                <h4>App store support</h4>
+                <p>Full app support from Development to deployment in application store and cloud solution</p>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="feature-block">
+                <img src="svg/code.svg" alt="img">
+                <h4>clean codes</h4>
+                <p>I offer the best practise with clean code that are highly maintainable with high support to an Bussiness or industry</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+      <div id="intro-example" class="p-5 text-center bg-image">
+        <div class="mask" style="background-color: rgb(40, 40, 37);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Shop with confidence at ShadyTech</h1>
+              <h5 class="mb-4">
+                Best & offers in technology in Morogoro town
+              </h5>
+              <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                role="button" rel="nofollow" target="_blank">See Offers</a>
+              <a class="btn btn-outline-light btn-lg m-2" href="https://mdbootstrap.com/docs/standard/"
+                target="_blank" role="button">Join community</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section id="pricing" class="padd-section text-cente">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+  
+            <h2>Meet With Price</h2>
+            <p class="separator">Mobile and website Development plans .</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="block-pricing">
+                <div class="pricing-table">
+                  <h4>Personal</h4>
+                  <h2>$50</h2>
+                  <ul class="list-unstyled">
+                    <li><b>UI/UX</b> Designing</li>
+                    <li><b>7/24</b> Tech Support</li>
+                  </ul>
+                  <div class="table_btn">
+                    <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="block-pricing">
+                <div class="pricing-table">
+                  <h4>basic</h4>
+                  <h2>$100</h2>
+                  <ul class="list-unstyled">
+                    <li><b>Front-End</b> Development</li>
+                    <li><b>7/24</b> Tech Support</li>
+                    <li>Security and Protection</li>
+                  </ul>
+                  <div class="table_btn">
+                    <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3">
+              <div class="block-pricing">
+                <div class="pricing-table">
+                  <h4>BUSINESS</h4>
+                  <h2>$200</h2>
+                  <ul class="list-unstyled">
+                    <li><b>Client-Server</b> Architecture</li>
+                    <li><b>7/24</b> Tech Support</li>
+                    <li>Monthly Backups</li>
+                    <li>Security and Protection</li>
+                  </ul>
+                  <div class="table_btn">
+                    <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+              <div class="block-pricing">
+                <div class="pricing-table">
+                  <h4>profeesional</h4>
+                  <h2>$300</h2>
+                  <ul class="list-unstyled">
+                    <li><b>Client-Server</b> Architecture</li>
+                    <li><b>API</b>  Development</li>
+                    <li><b>Back-end</b>  Development</li>
+                    <li><b>7/24</b> Tech Support</li>
+                    <li><b>Cloud Development</b> with SSD Cloud Storage</li>
+                    <li>Monthly Backups</li>
+                    <li>Security and Protection</li>
+                  </ul>
+                  <div class="table_btn">
+                    <a href="#" class="btn"><i class="bi bi-cart"></i> Buy Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="padd-sectio">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+  
+            <h2>Top Latest projects</h2>
+            <p class="separator">See and Observe The latest Project Overseen by me.</p>
+          </div>
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-md-6 col-lg-4">
+              <div class="block-blog text-left">
+                <a href="#"><img src="images/image1.png" alt="img"></a>
+                <div class="content-blog">
+                  <h4><a href="#">Desktop Development for water management</a></h4>
+                  <span>05, march 2022</span>
+                  <a class="float-end readmore" href="#">read more</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4">
+              <div class="block-blog text-left">
+                <a href="#"><img src="images/image3.png" class="img-responsive" alt="img"></a>
+                <div class="content-blog">
+                  <h4><a href="#">Sokoine University of agriculture attendance system</a></h4>
+                  <span>20, June 2022</span>
+                  <a class="float-end readmore" href="#">read more</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4">
+              <div class="block-blog text-left">
+                <a href="#"><img src="images/image2.png" class="img-responsive" alt="img"></a>
+                <div class="content-blog">
+                  <h4><a href="#">Adobe Design Sua Inovation Hub Logo</a></h4>
+                  <span>05, may 2019</span>
+                  <a class="float-end readmore" href="#">read more</a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+      <div class="container my-5">
+
+        <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">About company</h5>
+      
+                <p>
+                 ShadyTech is a next-generation global technology company that helps enterprises and Provide one stop solution to reimagine their businesses for the digital age.
+                </p>
+      
+                <p>
+                  ShadyTech helps transformation of businesses via Digital Foundation, I can modernize infrastructure stack built around cloud, software-defined networks, the digital workplace, and other elements; </p>
+                  <p> ShadyTech is Digital Business, with a combination of application services and consulting capabilities at enterprise level.
+                  </p>
+                <div class="mt-4">
+                  <!-- Facebook -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                  <!-- Google + -->
+                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+      
+                <div class="form-outline form-white mb-4">
+                  <input type="text" id="formControlLg" class="form-control form-control-lg">
+                  <label class="form-label" for="formControlLg" style="margin-left: 0px;">Search</label>
+                <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+      
+                <ul class="fa-ul" style="margin-left: 1.65em;">
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Morogoro, IPO IPO, Pochinene Bar</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">ShadyTech@gmail.com</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 255 714 8675 76</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 255 743 2953 74</span>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4">Opening hours</h5>
+      
+                <table class="table text-center text-white">
+                  <tbody class="font-weight-normal">
+                    <tr>
+                      <td>Mon - Thu:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Fri - Sat:</td>
+                      <td>8am - 1am</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday:</td>
+                      <td>9am - 10pm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="#">ShadyTech.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        
+      </div>
+</body>
+</html>

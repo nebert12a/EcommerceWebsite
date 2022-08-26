@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.0/css/bootstrap.min.css} "/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:rel="stylesheet" th:href="@{/css/contact.css} "/>
+  <link rel="stylesheet" href="../static/css/contact.css"/>
+  <link th:rel="stylesheet" th:href="@{/css/style.css} "/>
+    <title>Contact page</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+        <a href="#!" class="ms-md-2">
+          <img th:src="@{images\mylogo.PNG}" height="100" />
+        </a>
+      </div>
+    <!-- Container wrapper -->
+    <div class="container justify-content-center justify-content-md-between">
+      <!-- Left links -->
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item me-2 me-lg-0">
+          <a class="nav-link" href="#" role="button" data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1">
+            <i class="fas fa-bars me-1"></i>
+            <span>Sign in</span>
+          </a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" href="#">Sign up</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" th:href="@{/}">My Inspirations</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" th:href="@{/}">Blog</a>
+        </li>
+        <li class="nav-item me-2 me-lg-0 d-none d-md-inline-block">
+          <a class="nav-link" th:href="@{/}">Contact</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+
+      <button class="btn btn-outline-primary" data-mdb-ripple-color="dark" type="button">
+        Download app<i class="fas fa-download ms-2"></i>
+      </button>
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+    <section id="contact" class="padd-section">
+
+        <div class="container" data-aos="fade-up">
+          <div class="section-title text-center">
+            <h2>Contact</h2>
+            <p class="separator">Please leave me a message and a short description of your project below</p>
+          </div>
+  
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+  
+            <div class="col-lg-3 col-md-4">
+  
+              <div class="info">
+                <div>
+                  <i class="bi bi-geo-alt"></i>
+                  <p>Mazimbu IpoIpo Street<br>Morogoro, Morogoro 3000</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <p>ShadyTech@gmail.com</p>
+                </div>
+  
+                <div>
+                  <i class="bi bi-phone"></i>
+                  <p>+255 714 8675 76</p>
+                </div>
+              </div>
+  
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-5 col-md-8">
+              <div class="form">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+</body>
+</html>
